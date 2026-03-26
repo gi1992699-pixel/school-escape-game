@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🏫 СХРОНКА: Школьный кошмар</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div class="game-wrapper">
+    <h1>🏫 СХРОНКА: ШКОЛЬНЫЙ КОШМАР 🏫</h1>
+
+    <div class="stats">
+        <div class="stat">
+            <span>❤️ Здоровье:</span>
+            <div class="health-bar">
+                <div class="health-fill" id="healthFill"></div>
+            </div>
+            <span id="healthText">100</span>
+        </div>
+        <div class="stat">
+            <span>⚡ Выносливость:</span>
+            <div class="stamina-bar">
+                <div class="stamina-fill" id="staminaFill"></div>
+            </div>
+            <span id="staminaText">100</span>
+        </div>
+        <div class="stat">
+            <span>📝 Шпаргалки: <span id="itemCount">0</span>/3</span>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="player" id="player"></div>
+        <div class="enemy" id="enemy"></div>
+        <div class="item" id="item"></div>
+        <div class="exit" id="exit">🚪</div>
+    </div>
+
+    <div class="timer" id="timer">⏱️ Время: 0:00</div>
+    <div class="message" id="message">🔦 Найди 3 шпаргалки и сбеги к выходу!</div>
+
+    <div class="controls">
+        <button class="control-btn" id="btnUp">⬆️ Вверх</button>
+        <button class="control-btn" id="btnLeft">⬅️ Влево</button>
+        <button class="control-btn" id="btnDown">⬇️ Вниз</button>
+        <button class="control-btn" id="btnRight">➡️ Вправо</button>
+    </div>
+
+    <div style="text-align: center;">
+        <button class="reset-btn" id="resetBtn">🔄 Новая игра</button>
+        <p class="hint">WASD или стрелки - движение</p>
+    </div>
+</div>
+
+<script src="static/script.js"></script>
+</body>
+</html>
